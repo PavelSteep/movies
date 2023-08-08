@@ -1,0 +1,14 @@
+.page-footer .container{
+    padding: 0 50px;
+}
+
+.page-footer{
+    background: #17191e;
+    padding: 40px 0;
+    color: #fff;
+    position: inherit;
+}
+
+.page-footer .footer-copyright{
+    background: none;
+}

@@ -1,0 +1,43 @@
+nav .nav-wrapper{
+    height: 65px;
+    background: #2b3342;
+    margin-bottom: 25px;
+    position: relative;
+    z-index: 99;
+}
+
+.wrap{
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+nav ul a:hover{
+    background: none;
+}
+
+.wrap .brand-logo{
+    display: inline-block;
+    height: 35px;
+    margin: 15px 30px 15px 0;
+    display: inline-flex;
+}
+
+.wrap .brand-logo img{
+    height: 100%;
+    width: auto;
+    margin-right: 10px;
+}
+
+#nav-mobile li a{
+    font-size: 1rem;
+}
+
+#nav-mobile li a:hover{
+    color: #f04f24 !important;
+}
+
+#nav-mobile li a i{
+    font-size: 14px;
+    margin-right: 10px !important;
+}

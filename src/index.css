@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.wrapper{
+  padding: 2rem 0;
+  min-height: calc(100vh - 65px - 130px);
+  background-color: #343a40;
+}
+
+@keyframes fadeTop{
+  0% {
+    transform: translateY(-500px);
+    opacity: 0;
+  }
+}
+
+/* Movies */
+
+.movies{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 0 2rem;
+}
+
+.movies .card{
+  width: 12%;
+  min-width: 150px;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.movies .card .card-image{
+  height: 300px;
+}
+
+.movies .card .card-image img{
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.movies .card .card-title{
+  color: #fff !important;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.movies h3{
+  font-weight: 600;
+  color: #fff;
+}
+
+/* Search */
+
+.input-field{
+  padding: 0 2rem;
+}
+
+.input-field input{
+  color: #fff !important;
+}
+
+.input-field input:focus{
+  background: transparent !important;
+  border-bottom: 1px solid #9e9e9e !important;
+}
+
+.search-btn{
+  position: absolute;
+  top: 5px;
+  right: 2rem;
+}
+
+.input-field input::placeholder{
+  color: #fff !important;
+}
+
+.search-conditions span{
+  color: #fff;
+}
+
+.search-conditions label + label{
+  margin-left: 2rem;
+}
+
+[type="radio"]:not(:checked)+span:before, [type="radio"]:not(:checked)+span:after{
+  border: 2px solid #fff;
+}
+
+
+@media (max-width:1024px){
+  .movies{
+    justify-content: center;
+  }
+}
